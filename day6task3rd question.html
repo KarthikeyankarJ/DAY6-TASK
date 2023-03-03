@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("----------------3-Write a code to print the numbers in the array-----------------")
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string = "";
+
+for (var i = 0; i < 11; i++) {
+ new_string += numsArr[i] 
+}
+console.log(new_string);
+
+console.log("----------------3-Write a code to print the numbers in the array-----------------")
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var new_string ='';
+ 
+for (var i = 0; i < 11; i++) {
+ new_string += numsArr[i] + ','
+}
+
+var final = new_string.slice(0, -1);
+console.log(final);
+
+console.log("----------------3-Write a code to print from last to first with spaces (Make sure there is no space after the last element 1)-----------------")
+var new_string = "";
+ 
+for (var i = 11; i >=0; i -- ) {
+ new_string += numsArr[i] + " " 
+}
+console.log(new_string.trim());
+
+console.log("----------------3-Write a code to replace the array value — If the number is even, replace it with ‘even’.-----------------")
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <numsArr.length; i++) {
+ if(numsArr[i] %2 == 0 )
+ {
+ numsArr[i] = "even"
+ }
+}
+console.log(numsArr);
+
+console.log("----------------3-Write a code to replace the array value — If the index is even, replace it with ‘even’.-----------------")
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+for (var i = 0; i <numsArr.length; i++) {
+ if(i %2 == 0 )
+ {
+ numsArr[i] = "even"
+ }
+}
+console.log(numsArr);
+
+console.log("----------------3-Write a code to add all the numbers in the array.-----------------")
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum = 0;
+for (var i = 0; i <numsArr.length; i++) {
+ sum += numsArr[i]
+}
+console.log(sum);
+
+console.log("----------------3-Write a code to add the even numbers only-----------------")
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+for (var i = 0; i <numsArr.length; i++) {
+ if(numsArr[i]%2==0){
+    sum += numsArr[i]
+ };
+ 
+}
+console.log(sum);
+
+console.log("----------------3-Write a code to add the even numbers and subract the odd numbers-----------------")
+var numsArr = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
+var sum=0;
+var sum1 = 0;
+var sum2 = 0;
+for (var i = 0; i <=10; i++) {
+ if(numsArr[i]%2!=0)
+ {
+ sum1 += numsArr[i]
+ }
+ else
+ {
+ sum2 -= numsArr[i]
+ }
+}
+sum = sum1 + sum2
+console.log(sum);
+
+console.log("----------------3-Write a code to print inner arrays-----------------")
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+for (var i = 0; i < numsArr.length; i++) {
+}
+console.log("Array (5) " + numsArr[0])
+console.log("Array (6) " + numsArr[1])
+
+console.log("----------------3-Write a code to print elements in the inner arrays-----------------")
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all='';
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ )
+     str_all +=inner_array[j]
+}
+console.log(str_all);
+
+console.log("----------------3-Write a code to replace the array value — If the index is even, replace it with ‘even’.-----------------")
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all='';
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ )
+     str_all +=inner_array[j] + ','
+}
+var abc = str_all.slice(0, -1);
+abc = abc.split(',');
+
+
+for(k=0; k<abc.length; k++){
+   if(k%2 == 0){
+      var outfinal = ''
+      outfinal = "even"
+   }
+   else{
+      outfinal = k
+   }
+   console.log(outfinal)
+}
+
+console.log("----------------3-Write a code to print elements in the inner arrays in reverse.-----------------")
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all='';
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ )
+     str_all +=inner_array[j] + ' '
+}
+
+str_all = str_all.trim().split(' ')
+let bca = str_all.sort(function(a,b){
+   return(b-a)
+})
+let acb = bca
+console.log(acb)
+
+console.log("----------------3-Write a code to add elements in the inner arrays based on odd or even values-----------------")
+var numsArr = [[1, 2, 3, 4, 5],[ 6, 7, 8, 9, 10, 11]];
+var str_all='';
+for (var i = 0; i < numsArr.length; i++) {
+ var inner_array = numsArr[i];
+ for(var j = 0 ; j < inner_array.length;j++ )
+     str_all +=inner_array[j] + ' '
+}
+xyz = str_all.split(' ')
+var sum_even = 0;
+var sum_odd = 0;
+for (m = 0; m<xyz.length; m++){
+   if(xyz[m]%2 == 0){
+      sum_even += +xyz[m];
+   }
+   else{
+      sum_odd += +xyz[m]
+   }
+}
+console.log(sum_odd);
+console.log(sum_even);
+
+
+    </script>
+</body>
+</html>

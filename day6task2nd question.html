@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+console.log("****************2-Find the culprit****************");
+alert("I’m JavaScript!"); /*given alert( “I’m JavaScript!’); double quotes not used properlly*/
+
+console.log("****************2-Find the culprit and invoke the alert****************");
+alert("I’m invoked!"); /*inviked the alert*/
+
+console.log("****************2-Explain the below how it works****************");
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon, The reason semicolons are sometimes optional in JavaScript is because of automatic semicolon insertion, or ASI. Though using semicolon makes the code more readable
+alert(`Wor
+ ld`)
+alert(3 +
+1
++ 2); // this is multiple line code and its working, while using operator like + it will concatenate the strings, if we doesnt use operator then thoes string will appear in separate piece of code
+
+console.log("****************2-Fix the below to alert Guvi geek****************");
+var admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+admin = fname+ " " +lname; // space added between fname and lname
+alert( admin ); // "Guvi geek"
+
+console.log("****************2-Fix the below to alert hello Guvi geek****************");
+var fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+var name = fname+ " " +lname; // space added between fname and lname
+alert( 'hello'+ ' ' + name ); // space added and as the varialble is declared already it can be given directly to console, so that it will take the values
+
+console.log("****************2-Fix the below to alert sum of two numbers****************");
+var a = +prompt("First number?"); // it will concider as string so I converted it into number by adding a + sysmbol
+var b = +prompt("Second number?");
+alert(a + b);
+
+console.log("****************2-Explain Why the Code is blasted and how to diffuse it and get “Diffused”.***************");
+function num1(num){
+    var a = "2" > "12";
+//Don't touch below this
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+}
+
+       
+    </script>
+</body>
+</html>
